@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (min-width: 112.5em) {
+  html {
+    font-size: 70%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #474543;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  border: none;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+.btn,
+.btn:visited,
+.btn:link {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1.6rem 3rem;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: #474543;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+}
+
+.btn--primary {
+  background-color: #fcee71;
+}
+
+.btn--primary:hover {
+  background-color: #e5d7cc;
+  transform: translateY(-4px);
+}
+
+.btn--secondary {
+  background-color: #e5d7cd;
+}
+
+.btn--secondary:hover {
+  transform: translateY(-4px);
+}
+
+.wrapper {
+  padding: 0 3rem;
+}
+
+.active {
+  border: 1px solid #e5d7cc;
+  transform: scale(0.93);
+  transition: all 0.2s ease-in-out;
+}
+
+.loading-container {
+  min-height: 85vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active-btn {
+  opacity: 1 !important;
+}
+
+.active-filter {
+  border-bottom: 2px solid #333;
+}
+
+.active-sidebar {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateX(0) !important;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+}
+/* .active-filter::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  height: 1.9px;
+  background-color: #444;
+  width: 100%;
+} */
+
+.error--open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0) scale(1);
+}
+
+.error--close {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%) scale(1);
+}
+
+.open {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: scale(1) !important;
+}
+
+.btn-disabled {
+  display: none !important;
+}
